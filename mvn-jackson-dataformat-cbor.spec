@@ -4,13 +4,15 @@
 #
 Name     : mvn-jackson-dataformat-cbor
 Version  : 2.6.7
-Release  : 2
+Release  : 3
 URL      : https://github.com/FasterXML/jackson-dataformat-cbor/archive/jackson-dataformat-cbor-2.6.7.tar.gz
 Source0  : https://github.com/FasterXML/jackson-dataformat-cbor/archive/jackson-dataformat-cbor-2.6.7.tar.gz
 Source1  : https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.6.6/jackson-dataformat-cbor-2.6.6.jar
 Source2  : https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.6.6/jackson-dataformat-cbor-2.6.6.pom
 Source3  : https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.6.7/jackson-dataformat-cbor-2.6.7.jar
 Source4  : https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.6.7/jackson-dataformat-cbor-2.6.7.pom
+Source5  : https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.8.1/jackson-dataformat-cbor-2.8.1.jar
+Source6  : https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.8.1/jackson-dataformat-cbor-2.8.1.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -62,6 +64,12 @@ cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/d
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.6.7
 cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.6.7/jackson-dataformat-cbor-2.6.7.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.8.1
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.8.1/jackson-dataformat-cbor-2.8.1.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.8.1
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.8.1/jackson-dataformat-cbor-2.8.1.pom
+
 
 %files
 %defattr(-,root,root,-)
@@ -72,6 +80,8 @@ cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/d
 /usr/share/java/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.6.6/jackson-dataformat-cbor-2.6.6.pom
 /usr/share/java/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.6.7/jackson-dataformat-cbor-2.6.7.jar
 /usr/share/java/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.6.7/jackson-dataformat-cbor-2.6.7.pom
+/usr/share/java/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.8.1/jackson-dataformat-cbor-2.8.1.jar
+/usr/share/java/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.8.1/jackson-dataformat-cbor-2.8.1.pom
 
 %files license
 %defattr(0644,root,root,0755)
